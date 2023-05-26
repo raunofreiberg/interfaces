@@ -147,7 +147,7 @@ function Line({ variant, direction, ...props }) {
 ///////////////////////////////////////////////////////////////////
 
 const getMarkdown = cache(async () => {
-  const filePath = path.join(process.cwd(), "README.mdx");
+  const filePath = path.join(process.cwd(), "README.md");
   const file = await fs.readFile(filePath, "utf8");
   return matter(file);
 });
