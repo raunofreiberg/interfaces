@@ -1,4 +1,3 @@
-import Image from "next/image";
 import path from "path";
 import fs from "fs/promises";
 import { MDXRemote } from "next-mdx-remote/rsc";
