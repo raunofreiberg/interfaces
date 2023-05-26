@@ -285,12 +285,7 @@ main {
         margin-top: 8px;
 
         a[data-footnote-backref] {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 18px;
-          line-height: 18px;
-          text-decoration: none;
+          display: none;
         }
 
         &::marker {
