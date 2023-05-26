@@ -125,7 +125,7 @@ main {
   h1 {
     display: none;
 
-    ~ p {
+    ~ p:last-of-type {
       border-bottom: 1px solid var(--gray4);
       padding-bottom: 24px;
     }
@@ -298,6 +298,21 @@ main {
         }
       }
     }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: auto;
   }
 }
 

@@ -1,6 +1,6 @@
 # Web Interface Guidelines
 
-This document outlines a non-exhaustive list of details that make a good (web) interface. It is a living document, periodically updated based on personal learnings. Some of these may be subjective, but most apply to all websites. The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not duplicated in this document. However, some accessibility guidelines may be pointed out.
+This document outlines a non-exhaustive list of details that make a good (web) interface. It is a living document, periodically updated based on learnings. Some of these may be subjective, but most apply to all websites. The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not duplicated in this document. However, some accessibility guidelines may be pointed out. Contributions are welcome. Edit [this file](https://github.com/raunofreiberg/interfaces/blob/main/README.md) and submit a pull request.
 
 ## Interactivity
 

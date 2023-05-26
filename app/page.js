@@ -6,7 +6,7 @@ import rehypeSlug from "rehype-slug";
 import { cache } from "react";
 import matter from "gray-matter";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import { Icons } from "./icons";
+import { Icons, GitHub } from "./icons";
 
 export default async function Index() {
   const markdown = await getMarkdown();
