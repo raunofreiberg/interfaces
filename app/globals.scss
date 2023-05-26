@@ -207,6 +207,7 @@ main {
         display: inline-flex;
 
         a {
+          color: var(--gray11);
           align-items: center;
           justify-content: center;
           display: inline-flex;
@@ -220,7 +221,7 @@ main {
   }
 
   a {
-    color: var(--gray11);
+    color: inherit;
     text-decoration-line: underline;
     text-decoration-style: initial;
     text-decoration-color: var(--gray11);
