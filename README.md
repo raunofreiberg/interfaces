@@ -77,7 +77,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Authentication redirects should happen on the server before the client loads to avoid janky URL changes
 - Style the document selection state with `::selection`
 - Display messages relative to its trigger:
-  - Show a temporary checkmark on a successful copy, not a notification
+  - Show a temporary inline checkmark on a successful copy, not a notification
   - Highlight the relevant input on form errors, not the form
 - Empty states should prompt to create a new item, with optional templates
 
