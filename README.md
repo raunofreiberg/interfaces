@@ -79,7 +79,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Style the document selection state with `::selection`
 - Display feedback relative to its trigger:
   - Show a temporary inline checkmark on a successful copy, not a notification
-  - Highlight the relevant input on form errors, not the form
+  - Highlight the relevant input(s) on form error(s)
 - Empty states should prompt to create a new item, with optional templates
 
 [^1]: Switching between dark mode or light mode will trigger transitions on elements that are meant for explicit interactions like hover. We can [disable transitions temporarily](https://paco.me/writing/disable-theme-transitions) to prevent this. For Next.js, use [next-themes](https://github.com/pacocoursey/next-themes) which prevents transitions out of the box.
