@@ -69,7 +69,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Icon only interactive elements should define an explicit `aria-label`
 - Tooltips triggered by hover should not contain interactive content
 - Images should always be rendered with `<img>` for screen readers and ease of copying from the right click menu
-- Illustrations built with HTML should have an explicit `aria-label` instead of announcing the raw DOM tree to screen readers
+- Illustrations built with HTML should have an explicit `aria-label` instead of announcing the raw DOM tree to people using screen readers
 - Gradient text should unset the gradient on `::selection` state
 
 ## Design
