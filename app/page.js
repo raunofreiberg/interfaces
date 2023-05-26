@@ -18,7 +18,6 @@ export default async function Index() {
           height: 300,
         }}
       />
-
       <VerticalFade
         side="bottom"
         style={{
@@ -39,7 +38,6 @@ export default async function Index() {
           left: "calc(50% - 420px)",
         }}
       />
-
       <Line
         direction="vertical"
         style={{
