@@ -29,7 +29,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 ## Motion
 
 - Switching themes should not trigger transitions and animations on elements [^1]
-- Animation duration should not be more than 150ms for interactions to feel immediate
+- Animation duration should not be more than 200ms for interactions to feel immediate
 - Animation values should be proportional to the trigger size:
   - Don't animate dialog scale in from 0 → 1, fade opacity and scale from ~0.8
   - Don't scale buttons on press from 1 → 0.8, but ~0.96, ~0.9, or so
