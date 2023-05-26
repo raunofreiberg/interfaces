@@ -9,12 +9,6 @@ import matter from "gray-matter";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { Icons } from "./icons";
 
-export const metadata = {
-  title: "Web Interface Guidelines",
-  description:
-    "A non-exhaustive list of details that make a good web interface.",
-};
-
 export default async function Index() {
   const markdown = await getMarkdown();
   return (
