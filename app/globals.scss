@@ -365,11 +365,11 @@ main {
   z-index: 2;
 
   &[data-variant="defined"] {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   &[data-variant="subtle"] {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 
   &[data-direction="horizontal"] {
