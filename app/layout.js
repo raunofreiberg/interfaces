@@ -1,9 +1,26 @@
 import "./globals.scss";
 
+const url = "https://interfaces.rauno.me";
+const title = "Web Interface Guidelines";
+const description =
+  "A non-exhaustive list of details that make a good web interface.";
+const ogUrl = `${url}/og.png`;
+
 export const metadata = {
-  title: "Web Interface Guidelines",
-  description:
-    "A non-exhaustive list of details that make a good web interface.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url,
+    images: [{ url: ogUrl }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [ogUrl],
+  },
 };
 
 export default function RootLayout({ children }) {
