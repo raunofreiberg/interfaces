@@ -25,7 +25,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Font weight should not change on hover or selected state to prevent layout shift
 - Font weights below 400 should not be used
 - Medium sized headings generally look best with a font weight between 500-600
-- Adjust values fludily by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
+- Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
 
 ## Motion
 
