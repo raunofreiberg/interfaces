@@ -42,6 +42,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
   - Deleting or adding items from a list
   - Hovering trivial buttons
 - Looping animations should pause when not visible on the screen to offload CPU and GPU usage
+- Use `scroll-behavior: smooth` for navigating to in-page anchors, with an appropriate offset
 
 ## Touch
 
