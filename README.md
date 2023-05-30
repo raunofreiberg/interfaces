@@ -52,6 +52,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Inputs should not auto focus on touch devices as it will open the keyboard and cover the screen
 - Apply `muted` and `playsinline` to `<video />` tags to auto play on iOS
 - Disable `touch-action` for custom components that implement pan and zoom gestures to prevent interference from native behavior like zooming and scrolling
+- Disable the default iOS tap highlight with `-webkit-tap-highlight-color: rgba(0,0,0,0)`, but always replace it with an appropriate alternative
 
 ## Optimizations
 
@@ -78,7 +79,6 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Illustrations built with HTML should have an explicit `aria-label` instead of announcing the raw DOM tree to people using screen readers
 - Gradient text should unset the gradient on `::selection` state
 - When using submenus, make sure projected mouse trajectories over non interactive elements don’t close the menu if moved above a certain speed threshold
-- Disable the default iOS tap highlight with `-webkit-tap-highlight-color: rgba(0,0,0,0)`, but always replace it with an appropriate alternative
 
 
 ## Design
