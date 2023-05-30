@@ -53,7 +53,6 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Apply `muted` and `playsinline` to `<video />` tags to auto play on iOS
 - Disable `touch-action` for custom components that implement pan and zoom gestures to prevent interference from native behavior like zooming and scrolling
 - Disable the default iOS tap highlight with `-webkit-tap-highlight-color: rgba(0,0,0,0)`, but always replace it with an appropriate alternative
-- Style `hover` and `focus` states the same, as they both signify the same intent, but have a unique style for the `active` state
 
 ## Optimizations
 
