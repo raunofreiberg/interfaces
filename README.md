@@ -16,6 +16,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Buttons should be disabled after submission to avoid duplicate network requests
 - Interactive elements should disable `user-select` for inner content
 - Decorative elements (glows, gradients) should disable `pointer-events` to not hijack events
+- Interactive elements in a vertical or horizontal list should have no dead areas between each element, instead, increase their `padding`
 
 ## Typography
 
