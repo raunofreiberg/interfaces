@@ -66,7 +66,6 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 
 ## Accessibility
 
-- Set `meta` tag in `html` to `content="width=device-width, initial-scale=1.0”`
 - Disabled buttons should not have tooltips, they are not accessible [^6]
 - Box shadow should be used for focus rings, not outline which won’t respect radius [^7]
 - Focusable elements in a sequential list should be navigable with <kbd>↑</kbd> <kbd>↓</kbd>
