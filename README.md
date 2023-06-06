@@ -16,6 +16,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Buttons should be disabled after submission to avoid duplicate network requests
 - Interactive elements should disable `user-select` for inner content
 - Decorative elements (glows, gradients) should disable `pointer-events` to not hijack events
+- Interactive elements in a vertical or horizontal list should have no dead areas between each element, instead, increase their `padding`
 
 ## Typography
 
@@ -26,6 +27,9 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Font weights below 400 should not be used
 - Medium sized headings generally look best with a font weight between 500-600
 - Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
+- Where available, tabular figures should be applied with `font-variant-numeric: tabular-nums`, particularly in tables or when layout shifts are undesirable, like in timers
+- Prevent text resizing unexpectedly in landscape mode on iOS with `-webkit-text-size-adjust: 100%`
+
 
 ## Motion
 
@@ -39,6 +43,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
   - Deleting or adding items from a list
   - Hovering trivial buttons
 - Looping animations should pause when not visible on the screen to offload CPU and GPU usage
+- Use `scroll-behavior: smooth` for navigating to in-page anchors, with an appropriate offset
 
 ## Touch
 
@@ -47,6 +52,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Inputs should not auto focus on touch devices as it will open the keyboard and cover the screen
 - Apply `muted` and `playsinline` to `<video />` tags to auto play on iOS
 - Disable `touch-action` for custom components that implement pan and zoom gestures to prevent interference from native behavior like zooming and scrolling
+- Disable the default iOS tap highlight with `-webkit-tap-highlight-color: rgba(0,0,0,0)`, but always replace it with an appropriate alternative
 
 ## Optimizations
 
@@ -71,6 +77,8 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Images should always be rendered with `<img>` for screen readers and ease of copying from the right click menu
 - Illustrations built with HTML should have an explicit `aria-label` instead of announcing the raw DOM tree to people using screen readers
 - Gradient text should unset the gradient on `::selection` state
+- When using nested menus, use a "prediction cone" to prevent the pointer from accidentally closing the menu when moving across other elements.
+
 
 ## Design
 
