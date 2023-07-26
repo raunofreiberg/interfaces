@@ -20,7 +20,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 
 ## Typography
 
-- Fonts should have `-webkit-font-smoothing: antialiased` and `text-rendering: optimizeLegibility` applied for better legibility, except for dark themes [^1]
+- Fonts should have `-webkit-font-smoothing: antialiased` and `text-rendering: optimizeLegibility` applied for better legibility when using dark themes [^1]
 - Fonts should be subset based on the content, alphabet or relevant language(s)
 - Font weight should not change on hover or selected state to prevent layout shift
 - Font weights below 400 should not be used
@@ -89,7 +89,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
   - Highlight the relevant input(s) on form error(s)
 - Empty states should prompt to create a new item, with optional templates
 
-[^1]: When dark text is on a white background, antialiased texts will seem thinner because it has fewer pixels to play with, which might cause readability problems. More details on ["Please Stop 'Fixing' Font Smoothing"](https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/)
+[^1]: When dark text is on a white background (a light theme), antialiased texts will seem thinner because it has fewer pixels to play with, which might cause readability problems. More details on ["Please Stop 'Fixing' Font Smoothing"](https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/)
 [^2]: Switching between dark mode or light mode will trigger transitions on elements that are meant for explicit interactions like hover. We can [disable transitions temporarily](https://paco.me/writing/disable-theme-transitions) to prevent this. For Next.js, use [next-themes](https://github.com/pacocoursey/next-themes) which prevents transitions out of the box.
 [^3]: This is a matter of taste but some interactions just feel better with no motion. For example, the native macOS right click menu only animates out, not in, due to the frequent usage of it.
 [^4]: Most touch devices on press will temporarily flash the hover state, unless explicitly only defined for pointer devices with [`@media (hover: hover)`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover).
