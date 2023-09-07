@@ -23,7 +23,7 @@ The [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) spec is deliberately not dup
 - Fonts should have `-webkit-font-smoothing: antialiased` applied for better legibility
 - Fonts should have `text-rendering: optimizeLegibility` applied for better legibility
 - Fonts should be subset based on the content, alphabet or relevant language(s)
-- Font weight should not change on hover or selected state to prevent layout shift
+- Font weight should not change on hover or selected state to prevent layout shift (excepting [fixed-width fonts](https://en.wikipedia.org/wiki/Monospaced_font))
 - Font weights below 400 should not be used
 - Medium sized headings generally look best with a font weight between 500-600
 - Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
